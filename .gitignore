@@ -25,3 +25,13 @@ miner/*.zip
 # Misc
 c3po-portable.zip
 *.log
+
+# Screenshots / photos (host externally — not stored in repo)
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.heic
+*.HEIC

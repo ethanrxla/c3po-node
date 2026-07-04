@@ -32,62 +32,36 @@ A persistent Windows C2 agent and Flask-based control server built for authorize
 ### Overview & Agent Update Manager
 Tracks online nodes, commands executed, keylog batches, discovered hosts, and credential findings. Push new agent builds to all nodes in one click.
 
-![Dashboard overview and update manager](Screenshot_2026-07-03_23-19-55.png)
-
 ### Task Queue
 Full task history with type, payload, status, and expandable output per task. Supports `exec`, `ps`, `mine_start/stop`, `inject`, `revshell`, `byovd_arm`, `harvest`, `spread`, `update`, and more.
-
-![Task queue](IMG_7794.JPG)
 
 ### Keylog Stream
 Live keylog stream across all nodes, timestamped per window title. Captures active window context alongside keystrokes.
 
-![Keylog stream](IMG_7793.JPG)
-
 ### API Traffic Monitor
 Per-process network connection table updated every 90s. Shows process name, command line, local/remote address, protocol, and TCP state. Highlight or kill a process directly from the dashboard.
 
-![API traffic monitor](IMG_7791.JPG)
-
-![API traffic monitor — kill process](IMG_7792.JPG)
-
 ### System Inventory
 Full hardware/software snapshot collected on agent startup and every 4 hours. Inspect raw JSON per collection.
-
-![System inventory](IMG_7790.JPG)
 
 ### Credential Findings
 
 **Generic secrets & API keys** — scans env files, config files, and memory for JWT tokens, OpenAI keys, and generic secrets.
 
-![Generic secrets](IMG_7786.JPG)
-
 **Browser saved passwords** — harvests Chrome/Edge DPAPI-encrypted saved credentials.
-
-![Browser saved passwords](IMG_7787.JPG)
 
 **Key files** — finds `.pem`, `.key`, and JSON wallet files containing RSA/DSA private keys and seed fields.
 
-![Key files](IMG_7788.JPG)
-
 **Seed phrases** — detects BIP39 mnemonic patterns across the filesystem.
-
-![Seed phrases](IMG_7789.JPG)
 
 ### Network Map & Host Discovery
 Discovered hosts from agent subnet sweeps and nmap scans, merged into a single view with open ports and SMB flags.
 
-![Discovered hosts](IMG_7799.JPG)
-
 ### Nmap Scanner
 Run nmap directly from the C2 server against discovered hosts. Results feed back into the Network Map automatically.
 
-![Nmap scanner](IMG_7798.JPG)
-
 ### Mining Control
 Deploy XMRig to nodes via the C2. Control CPU cap, GPU toggle, coin, pool, and wallet from the dashboard. Live hashrate reported back.
-
-![Mining control](IMG_7785.JPG)
 
 ---
 
