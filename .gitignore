@@ -1,0 +1,27 @@
+# Live server state — never commit
+server/config.json
+server/node.db
+
+# Compiled agent binaries
+server/uploads/*.exe
+server/uploads/*.sys
+server/uploads/*.bin
+agent/node
+agent/node.exe
+*.exe
+*.sys
+*.bin
+
+# Miner distribution (xmrig + WinRing0x64.sys)
+server/miner_bins/
+miner/xmrig-6.26.0/
+miner/*.zip
+
+# Python bytecode
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Misc
+c3po-portable.zip
+*.log

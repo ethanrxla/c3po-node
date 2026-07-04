@@ -1,0 +1,8 @@
+{
+  "port": 9000,
+  "admin_user": "admin",
+  "admin_pass": "CHANGE_ME",
+  "secret_key": "CHANGE_ME_32_HEX_CHARS",
+  "c2_aes_key": "CHANGE_ME_32_CHAR_ASCII_KEY_HERE",
+  "c2_aes_iv":  "CHANGE_ME_16CHAR"
+}
