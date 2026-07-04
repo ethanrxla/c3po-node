@@ -32,62 +32,62 @@ A persistent Windows C2 agent and Flask-based control server built for authorize
 ### Overview & Agent Update Manager
 Tracks online nodes, commands executed, keylog batches, discovered hosts, and credential findings. Push new agent builds to all nodes in one click.
 
-![Dashboard overview and update manager](Screenshot_2026-07-03_23-19-55.png)
+![Dashboard overview and update manager](https://github.com/user-attachments/assets/59975efb-c9c2-42de-97e5-fc28820ae08a)
 
 ### Task Queue
 Full task history with type, payload, status, and expandable output per task. Supports `exec`, `ps`, `mine_start/stop`, `inject`, `revshell`, `byovd_arm`, `harvest`, `spread`, `update`, and more.
 
-![Task queue](IMG_7794.JPG)
+![Task queue](https://github.com/user-attachments/assets/f895ebce-f9c0-4120-b950-d59cc2919af2)
 
 ### Keylog Stream
 Live keylog stream across all nodes, timestamped per window title. Captures active window context alongside keystrokes.
 
-![Keylog stream](IMG_7793.JPG)
+![Keylog stream](https://github.com/user-attachments/assets/50ab89d6-14b4-4d97-9fe3-4735b6b2a62c)
 
 ### API Traffic Monitor
 Per-process network connection table updated every 90s. Shows process name, command line, local/remote address, protocol, and TCP state. Highlight or kill a process directly from the dashboard.
 
-![API traffic monitor](IMG_7791.JPG)
+![API traffic monitor](https://github.com/user-attachments/assets/4b714f1b-ddc8-44bd-b13c-e865be97479d)
 
-![API traffic monitor — kill process](IMG_7792.JPG)
+![API traffic monitor — kill process](https://github.com/user-attachments/assets/7899ba21-6784-4965-a46f-d0b24b0df9fb)
 
 ### System Inventory
 Full hardware/software snapshot collected on agent startup and every 4 hours. Inspect raw JSON per collection.
 
-![System inventory](IMG_7790.JPG)
+![System inventory](https://github.com/user-attachments/assets/db7feb78-18a1-4566-93b9-87372de477cc)
 
 ### Credential Findings
 
 **Generic secrets & API keys** — scans env files, config files, and memory for JWT tokens, OpenAI keys, and generic secrets.
 
-![Generic secrets](IMG_7786.JPG)
+![Generic secrets](https://github.com/user-attachments/assets/5676c335-e820-45fc-bb39-e846b3cc37ab)
 
 **Browser saved passwords** — harvests Chrome/Edge DPAPI-encrypted saved credentials.
 
-![Browser saved passwords](IMG_7787.JPG)
+![Browser saved passwords](https://github.com/user-attachments/assets/ed483015-e49e-4dec-b51e-4b86e36023f0)
 
 **Key files** — finds `.pem`, `.key`, and JSON wallet files containing RSA/DSA private keys and seed fields.
 
-![Key files](IMG_7788.JPG)
+![Key files](https://github.com/user-attachments/assets/45eb6ea6-d39d-4b67-9e8b-3814bff739c9)
 
 **Seed phrases** — detects BIP39 mnemonic patterns across the filesystem.
 
-![Seed phrases](IMG_7789.JPG)
+![Seed phrases](https://github.com/user-attachments/assets/8127ca4d-1b79-43f9-a8ae-5c6feb8393a0)
 
 ### Network Map & Host Discovery
 Discovered hosts from agent subnet sweeps and nmap scans, merged into a single view with open ports and SMB flags.
 
-![Discovered hosts](IMG_7799.JPG)
+![Discovered hosts](https://github.com/user-attachments/assets/6be5f3a1-508b-4f41-afb5-f8d0952e871a)
 
 ### Nmap Scanner
 Run nmap directly from the C2 server against discovered hosts. Results feed back into the Network Map automatically.
 
-![Nmap scanner](IMG_7798.JPG)
+![Nmap scanner](https://github.com/user-attachments/assets/3f90dfee-7803-4adc-b10b-c6deba4510d2)
 
 ### Mining Control
 Deploy XMRig to nodes via the C2. Control CPU cap, GPU toggle, coin, pool, and wallet from the dashboard. Live hashrate reported back.
 
-![Mining control](IMG_7785.JPG)
+![Mining control](https://github.com/user-attachments/assets/a5347b62-a005-4579-9267-c60f0f542bea)
 
 ---
 

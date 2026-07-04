@@ -28,3 +28,7 @@ c3po-portable.zip
 
 # Raw unedited photos (cropped versions are tracked)
 IMG_7795.HEIC
+
+# README screenshots are stored outside this repo and should be hosted externally for GitHub rendering.
+IMG_*.JPG
+Screenshot_*.png
